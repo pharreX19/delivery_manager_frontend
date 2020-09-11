@@ -1,0 +1,20 @@
+{
+  "name": "cell_tech_delivery",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "tailwind": "./node_modules/.bin/tailwind build ./src/assets/css/tailwind.css -o ./public/build/css/output.css"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "tailwindcss": "^1.8.3",
+    "vue": "^3.0.0-rc.1",
+    "vue-router": "^4.0.0-beta.9"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "vite": "^1.0.0-rc.1"
+  }
+}
