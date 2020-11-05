@@ -1,12 +1,16 @@
 import httpClient from './httpClient'
-const END_POINT = '/auth/';
+const END_POINT = 'auth/';
 
-const login = (name, password) => httpClient.post(END_POINT + 'login', {name, password});
+const api_login_user = ({name, password}) => httpClient.post('http://localhost:8000/api/auth/login', {name, password});
 
-const createUser = () => httpClient.post(END_POINT);
+const api_logout_user = () => httpClient.post('http://localhost:8000/api/auth/logout');
 
-const updateUser = (id, name=null, password, confirmPassword) => httpClient.patch(END_POINT, {name, password, confirmPassword})
+// const createUser = () => httpClient.post(END_POINT);
+
+const api_update_user = ({password, password_confirmation, old_password}) => httpClient.patch(`http://localhost:8000/api/users/`, {password, password_confirmation, old_password})
 
 export {
-    login
+    api_login_user,
+    api_update_user,
+    api_logout_user
 }

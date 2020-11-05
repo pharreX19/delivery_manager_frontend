@@ -13,43 +13,89 @@ export default [
     {   
         path: '/', 
         component: Dashboard,
+        name: 'dashboard',
+        meta: {
+            requiresAuth: true
+        }
     },
     {
         path: '/delivery', 
-        component: Delivery
+        component: Delivery,
+        name: 'delivery',
+        meta: {
+            requiresAuth: true
+        }
     },
     {
         path: '/report', 
-        component: Report
+        component: Report,
+        name: 'report',
+        meta: {
+            requiresAuth: true
+        }
     },
     {
         path: '/jobs', 
-        component: Jobs
+        component: Jobs,
+        name: 'jobs',
+        meta: {
+            requiresAuth: true
+        }
     },
     {
         path: '/admin-panel', 
-        component: AdminPanel
+        component: AdminPanel,
+        name: 'admin-panel',
+        meta: {
+            requiresAuth: true
+        }
     },
     {
         path: '/job-details/:jobId', 
         component: JobDetails,
-        name: 'job-details'
+        name: 'job-details',
+        meta: {
+            requiresAuth: true
+        }
     },
     {   
         path: '/admin/manage-staff', 
-        component: Staff
+        component: Staff,
+        name: 'manage-staff',
+        meta: {
+            requiresAuth: true
+        }
     },
     {   
         path: '/admin/manage-items', 
-        component: Items
+        component: Items,
+        name: 'manage-items',
+        meta: {
+            requiresAuth: true
+        }
     },
     {   
         path: '/admin/profile', 
-        component: Profile
+        component: Profile,
+        name: 'profile',
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {   
+        path: '/logout', 
+        name: 'logout',
+        meta: {
+            requiresAuth: true
+        }
     },
     {   
         path: '/login', 
-        component: Login
+        component: Login,
+        name: 'login',
+        meta: {
+            guest: true
+        }
     },
 
 

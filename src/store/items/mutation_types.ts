@@ -1,0 +1,9 @@
+export const enum MutationTypes {
+    SET_LOADING = 'SET_LOADING',
+    SET_ERRORS = 'SET_ERRORS',
+    SET_ITEMS = 'SET_ITEMS',
+    SET_ITEM = 'SET_ITEM',
+    UPDATE_ITEM = 'UPDATE_ITEM',
+    DELETE_ITEM = 'DELETE_ITEM',
+    SET_TOTAL_PAGES = 'SET_TOTAL_PAGES'
+}
